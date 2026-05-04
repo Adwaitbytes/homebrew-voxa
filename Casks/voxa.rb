@@ -10,8 +10,10 @@ cask "voxa" do
 
   # Voxa needs cloudflared to expose the local tool server to the backend.
   # Brew auto-installs this dependency before Voxa, so users get a fully
-  # working install in one command.
-  depends_on cask: "cloudflared"
+  # working install in one command. cloudflared is a brew FORMULA (CLI),
+  # NOT a cask — getting this wrong fails install with "Cask cloudflared
+  # is unavailable" (bug 2026-05-05).
+  depends_on formula: "cloudflared"
   depends_on macos: ">= :sonoma"
 
   app "Voxa.app"
