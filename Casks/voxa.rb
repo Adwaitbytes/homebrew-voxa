@@ -1,6 +1,6 @@
 cask "voxa" do
-  version "0.1.4"
-  sha256 "8d61ae15046b92519393321bc0828226b7303edc0de01e7481133a2babae8b0e"
+  version "0.1.5"
+  sha256 "388e9369f4adcd02ea93ced42054d8922ffb38071b9c4c8cab1234958093b002"
 
   url "https://srv1145523.hstgr.cloud/dl/Voxa-#{version}.dmg",
       verified: "srv1145523.hstgr.cloud/dl/"
